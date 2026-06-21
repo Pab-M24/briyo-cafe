@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Briyo Cafe — Desayuno y brunch en Leon, Guanajuato. Mucho feeling, mucho flow. Abiertos todos los dias de 8AM a 2PM.">
+  <meta name="keywords" content="briyo cafe, desayuno leon guanajuato, brunch leon, cafe leon gto, desayunos leon">
+  <meta property="og:title" content="Briyo — Desayuno & Brunch en Leon, Gto.">
+  <meta property="og:description" content="Desayuno y brunch con mucho feeling, mucho flow. Vicente Valtierra 7168, Leon.">
+  <meta property="og:image" content="assets/logo.png">
+  <title>Briyo Cafe — Desayuno & Brunch · Leon, Guanajuato</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Briyo Cafe" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="nav-logo-text" style="display:none">BR<span>I</span>YO</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="menu.html" class="nav-cta">Ver menu completo</a></li>
+      </ul>
+      <div class="burger" id="burger" aria-label="Menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-deco-line"></div>
+      <p class="hero-tag">Leon, Guanajuato &mdash; Desayuno &amp; Brunch</p>
+      <h1 class="hero-title">Mucho feeling,<br>mucho flow.</h1>
+      <p class="hero-subtitle">
+        De lunes a domingo de 8 de la manana a las 2 de la tarde.<br>
+        Blvrd Vicente Valtierra 7168, Leon.
+      </p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn-filled">Ver nuestro menu</a>
+        <a href="https://maps.google.com/?q=Blvrd+Vicente+Valtierra+7168+Leon+Guanajuato" target="_blank" rel="noopener" class="btn-outline">Como llegar</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <!-- FOTO: terraza exterior Briyo con plantas y luz natural — imagen hero -->
+      <div class="img-placeholder" style="min-height:100vh">
+        <span>FOTO: Terraza exterior Briyo con plantas y luz natural</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE CONFIANZA -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <p class="trust-label">Calificacion</p>
+        <p class="trust-value">4.6 / 682 resenas en Google</p>
+      </div>
+      <div class="trust-item">
+        <p class="trust-label">Para toda la familia</p>
+        <p class="trust-value">Pet-friendly y area para ninos</p>
+      </div>
+      <div class="trust-item">
+        <p class="trust-label">Estacionamiento</p>
+        <p class="trust-value">Valet parking sin costo</p>
+      </div>
+      <div class="trust-item">
+        <p class="trust-label">Espacio</p>
+        <p class="trust-value">Terraza y rooftop disponibles</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLATILLOS DESTACADOS -->
+  <section class="platillos" id="platillos">
+    <div class="platillos-inner">
+      <p class="section-tag fade-in-up">La carta</p>
+      <h2 class="section-title fade-in-up">Lo que nos hace unicos</h2>
+      <p class="section-subtitle fade-in-up">Platillos que no encontraras en ningun otro lugar de Leon</p>
+
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-target="#tab-eggcellent">Eggcellent Day</button>
+        <button class="tab-btn" data-target="#tab-sweet">Sweet Briyo</button>
+        <button class="tab-btn" data-target="#tab-panes">Entre Panes</button>
+        <button class="tab-btn" data-target="#tab-bebidas">Bebidas</button>
+      </div>
+
+      <!-- TAB: Eggcellent Day -->
+      <div class="tab-panel" id="tab-eggcellent">
+        <div class="platillos-grid">
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: platillo con huevo — Briyo-dictiosos, huevos estrellados sobre brioche -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Briyo-dictiosos</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Briyo-dictiosos</p>
+              <p class="platillo-desc">Huevos estrellados sobre Brioche que pasan feeling, con Jitomates Rostizados y Ensalada Verde. Acompanado de pan.</p>
+              <p class="platillo-price">$155</p>
+            </div>
+          </div>
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: platillo con huevo — Omelette Cactus sobre salsa de jitomate -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Omelette Cactus</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Omelette Cactus</p>
+              <p class="platillo-desc">Relleno de Queso y Jamon de Piso sobre salsa de Jitomate Rostizado, servido con Aguacate y Cebolla Morada. Acompanado de pan.</p>
+              <p class="platillo-price">$139</p>
+            </div>
+          </div>
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: platillo con huevo — Omelette Olivo con pimientos y espinaca -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Omelette Olivo</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Omelette Olivo</p>
+              <p class="platillo-desc">Relleno de Queso Panela y un mix de Pimientos, Espinaca, a la Mexicana, Recaorcito o Estrellado. Acompanado de pan.</p>
+              <p class="platillo-price">$149</p>
+            </div>
+          </div>
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: platillo con huevo — Huevos al gusto con jamon y chorizo -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Huevos al Gusto</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Huevos al Gusto</p>
+              <p class="platillo-desc">Dos huevos a la Mexicana, Recaorcitos o Estrellados. Elige 2 ingredientes: Jamon, Chorizo, Pimientos. Ingredientes extra $15.</p>
+              <p class="platillo-price">$129</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB: Sweet Briyo -->
+      <div class="tab-panel" id="tab-sweet" hidden>
+        <div class="platillos-grid">
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: platillo dulce — Concha rellena con yogurt griego y frutos rojos -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Concha Rellena</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Concha Rellena</p>
+              <p class="platillo-desc">Rellena de Yogurt Griego con Granola, Cajeta y Frutos Rojos.</p>
+              <p class="platillo-price">$60</p>
+            </div>
+          </div>
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: platillo dulce — Briyo Perfecto, parfait de yogurt griego con granola -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Briyo Perfecto</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Briyo Perfecto</p>
+              <p class="platillo-desc">Parfait de Yogurt Griego con Granola, Cajeta y Frutos Rojos.</p>
+              <p class="platillo-price">$89</p>
+            </div>
+          </div>
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: pan frances — Pan Frances Clasico, brioche dorado con mascarpone -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Pan Frances Clasico</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Pan Frances Clasico</p>
+              <p class="platillo-desc">Pan Brioche de Mantequilla con Azucar y Canela, servido con Crema de Queso Mascarpone.</p>
+              <p class="platillo-price">$115</p>
+            </div>
+          </div>
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: pan frances — Desierto, brioche relleno de queso crema con mango -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Desierto</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Desierto</p>
+              <p class="platillo-desc">Pan Brioche crujiente por fuera, relleno de Queso Crema. Servido con Mango y Compota de Guayaba y Canela.</p>
+              <p class="platillo-price">$139</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB: Entre Panes -->
+      <div class="tab-panel" id="tab-panes" hidden>
+        <p class="tab-note">Elaborado con pan rustico, acompanados con chips de papa y camote o ensalada.</p>
+        <div class="platillos-grid">
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: sandwich gourmet — Sandwich Loreto con salmon y aguacate -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Sandwich Loreto</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Sandwich Loreto</p>
+              <p class="platillo-desc">Salmon curado con Rebanadas de Aguacate y Jitomate deshidratado.</p>
+              <p class="platillo-price">$189</p>
+            </div>
+          </div>
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: sandwich gourmet — Sandwich Mazunte con rib eye y tocino caramelizado -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Sandwich Mazunte</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Sandwich Mazunte</p>
+              <p class="platillo-desc">Rib eye a baja temperatura con Chiles Secos, Tocino Caramelizado, Guacamole, Queso Panela y Cebolla Frita.</p>
+              <p class="platillo-price">$195</p>
+            </div>
+          </div>
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: sandwich gourmet — Sandwich Cabo con tres quesos y tocino caramelizado -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Sandwich Cabo</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Sandwich Cabo</p>
+              <p class="platillo-desc">Queso Parmesano, Mozzarela y Gouda, Chips de Jalapeno, Tocino Caramelizado y Salsa de Jitomate Rostizado.</p>
+              <p class="platillo-price">$179</p>
+            </div>
+          </div>
+
+          <div class="platillo-card fade-in-up">
+            <div class="platillo-img">
+              <!-- FOTO: sandwich gourmet — Sandwich Baja vegetariano con berenjena y manchego -->
+              <div class="img-placeholder" style="min-height:200px">
+                <span>FOTO: Sandwich Baja</span>
+              </div>
+            </div>
+            <div class="platillo-info">
+              <p class="platillo-name">Sandwich Baja</p>
+              <p class="platillo-desc">Steak de Berenjena con Pimientos Rostizados, Queso Manchego, Relish de Pepinillos, Mostaza y Cebolla Frita.</p>
+              <p class="platillo-price">$159</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB: Bebidas -->
+      <div class="tab-panel" id="tab-bebidas" hidden>
+        <div class="bebidas-grid">
+
+          <div class="bebidas-section">
+            <!-- FOTO: bebidas de especialidad — frappes y cafes servidos en mesa -->
+            <h4>Clasicos</h4>
+            <div class="bebida-item"><span class="bebida-name">Americano recien molido</span><span class="bebida-price">$50</span></div>
+            <div class="bebida-item"><span class="bebida-name">Americano refill</span><span class="bebida-price">$40</span></div>
+            <div class="bebida-item"><span class="bebida-name">Espresso Doble</span><span class="bebida-price">$39</span></div>
+            <div class="bebida-item"><span class="bebida-name">Latte</span><span class="bebida-price">$60</span></div>
+            <div class="bebida-item"><span class="bebida-name">Coco Latte</span><span class="bebida-price">$69</span></div>
+            <div class="bebida-item"><span class="bebida-name">Caramel / Macha Latte</span><span class="bebida-price">$69</span></div>
+          </div>
+
+          <div class="bebidas-section">
+            <h4>Cafeteria Especial</h4>
+            <div class="bebida-item"><span class="bebida-name">Affogato — Cafe con helado</span><span class="bebida-price">$65</span></div>
+            <div class="bebida-item"><span class="bebida-name">Rise &amp; Shine — Naranja con cafe</span><span class="bebida-price">$59</span></div>
+            <div class="bebida-item"><span class="bebida-name">Mokka Oaxaqueno</span><span class="bebida-price">$58</span></div>
+            <div class="bebida-item"><span class="bebida-name">Variedad de Tes</span><span class="bebida-price">$59</span></div>
+            <div class="bebida-item"><span class="bebida-name">Tisana</span><span class="bebida-price">$39</span></div>
+          </div>
+
+          <div class="bebidas-section">
+            <h4>Frappes</h4>
+            <div class="bebida-item"><span class="bebida-name">Carajillo Frappuccino</span><span class="bebida-price">$75</span></div>
+            <div class="bebida-item"><span class="bebida-name">Coco Frappuccino</span><span class="bebida-price">$75</span></div>
+            <div class="bebida-item"><span class="bebida-name">Matcha Frappuccino</span><span class="bebida-price">$75</span></div>
+            <div class="bebida-item"><span class="bebida-name">Tisana Frappe</span><span class="bebida-price">$39</span></div>
+          </div>
+
+          <div class="bebidas-section">
+            <h4>Extras</h4>
+            <div class="bebida-item"><span class="bebida-name">Leche de coco o almendras</span><span class="bebida-price">$12</span></div>
+            <div class="bebida-item"><span class="bebida-name">Jarabe extra (coco, vainilla, caramelo)</span><span class="bebida-price">$15</span></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros-img">
+      <!-- FOTO: exterior del cafe con plantas, terraza y entrada con pizarron -->
+      <div class="img-placeholder" style="min-height:560px">
+        <span>FOTO: Exterior del cafe — terraza con plantas, entrada y pizarron</span>
+      </div>
+    </div>
+    <div class="nosotros-text">
+      <div class="nosotros-deco"></div>
+      <p class="nosotros-tag">Nuestra historia</p>
+      <h2 class="nosotros-title">Nacimos para que tu manana brille</h2>
+      <p class="nosotros-body">
+        En Briyo creemos que el desayuno no es solo comida &mdash; es el ritual mas importante del dia. Por eso cada platillo, cada taza y cada detalle de nuestro espacio existe para darte ese briyo que necesitas para empezar con todo.
+        Abrimos todos los dias para que nunca te falte tu dosis de feeling.
+      </p>
+      <p class="nosotros-detail">Blvrd Vicente Valtierra 7168, Leon &middot; Lun-Dom 8:00 AM a 2:00 PM</p>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="resenas" id="resenas">
+    <div class="resenas-inner">
+      <div class="resenas-header">
+        <h2 class="resenas-title fade-in-up">Lo que dicen nuestros clientes</h2>
+        <p class="resenas-subtitle fade-in-up">4.6 estrellas en Google con mas de 682 resenas</p>
+        <div class="resenas-deco fade-in-up"></div>
+      </div>
+      <div class="resenas-grid">
+
+        <div class="resena-card fade-in-up">
+          <p class="resena-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="resena-text">"Si adoras los desayunitos de senora para juntarte con las amigas este es tu lugar. Con un menu delicioso por donde lo veas, variedad de bebidas y una ambientacion increible."</p>
+          <hr class="resena-sep">
+          <p class="resena-name">Dylan Granados</p>
+          <p class="resena-detail">Brunch &middot; $200&ndash;300 &middot; Google Local Guide</p>
+        </div>
+
+        <div class="resena-card fade-in-up">
+          <p class="resena-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="resena-text">"Leon no me decepciona. Si en algun lugar hay muy buenas opciones para desayunar es en Leon. Mi hermana nos llevo un domingo y que buen lugar. Comodo, excelente y veloz servicio."</p>
+          <hr class="resena-sep">
+          <p class="resena-name">Jorge BH</p>
+          <p class="resena-detail">Desayuno &middot; $200&ndash;300 &middot; Google Local Guide</p>
+        </div>
+
+        <div class="resena-card fade-in-up">
+          <p class="resena-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="resena-text">"Excelente comida, muy recomendada la concha de natas. Todos sus platillos bien servidos y gran sabor. Supero mis expectativas. El lugar es muy amplio pero se llena, recomiendo llegar temprano."</p>
+          <hr class="resena-sep">
+          <p class="resena-name">Diego Rodriguez Ruiz</p>
+          <p class="resena-detail">Desayuno &middot; Google Local Guide</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="contacto-inner">
+      <div class="contacto-left">
+        <div class="contacto-deco"></div>
+        <h2 class="contacto-title fade-in-up">Ven a desayunar</h2>
+        <p class="contacto-subtitle fade-in-up">Te esperamos todos los dias de la semana</p>
+        <div class="contacto-info fade-in-up">
+          <div class="contacto-item">
+            <span class="contacto-item-label">Direccion</span>
+            <span class="contacto-item-value">Blvrd Vicente Valtierra 7168, Fracciones Canada de Alfaro, Leon, Gto.</span>
+          </div>
+          <div class="contacto-item">
+            <span class="contacto-item-label">Telefono</span>
+            <span class="contacto-item-value"><a href="tel:4775643198">477 564 3198</a></span>
+          </div>
+          <div class="contacto-item">
+            <span class="contacto-item-label">Horario</span>
+            <span class="contacto-item-value">Lunes a Domingo 8:00 AM a 2:00 PM<br><small style="opacity:0.7">Lunes cierra a las 2:30 PM</small></span>
+          </div>
+          <div class="contacto-item">
+            <span class="contacto-item-label">Redes</span>
+            <span class="contacto-item-value">
+              <a href="https://instagram.com/briyo.mx" target="_blank" rel="noopener">Instagram @briyo.mx</a><br>
+              <a href="https://tiktok.com/@briyo.mx" target="_blank" rel="noopener">TikTok @briyo.mx</a>
+            </span>
+          </div>
+        </div>
+        <a href="https://wa.me/524775643198" target="_blank" rel="noopener" class="btn-whatsapp fade-in-up">
+          Reservar por WhatsApp
+        </a>
+      </div>
+      <div class="contacto-mapa fade-in-up">
+        <!-- Reemplaza el src del iframe con el embed real de Google Maps:
+             Busca "Briyo Cafe Leon Gto" en Google Maps > Compartir > Insertar mapa > copiar el src -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.642!2d-101.65!3d21.108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf40a5f56b49%3A0xbc1d26c8e4e0d6a2!2sBriyo%20Desayuno%20%26%20Brunch!5e0!3m2!1ses!2smx!4v1700000000000"
+          width="100%"
+          height="420"
+          style="border:0; border-radius:4px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicacion Briyo Cafe Leon Guanajuato">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-brand-name">BRIYO</p>
+        <p class="footer-brand-sub">Desayuno &amp; Brunch &middot; Leon, Guanajuato</p>
+      </div>
+      <div class="footer-center">
+        <p>Lun &ndash; Dom &middot; 8:00 AM &ndash; 2:00 PM</p>
+        <p>Blvrd Vicente Valtierra 7168, Leon</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="https://instagram.com/briyo.mx" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://tiktok.com/@briyo.mx" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://wa.me/524775643198" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <p class="footer-copy">2025 Briyo Cafe &middot; Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTON WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/524775643198" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.86L0 24l6.29-1.512A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.875 9.875 0 01-5.032-1.377l-.361-.214-3.735.898.937-3.629-.235-.374A9.867 9.867 0 012.118 12C2.118 6.533 6.533 2.118 12 2.118c5.466 0 9.882 4.415 9.882 9.882 0 5.466-4.416 9.882-9.882 9.882z"/>
+    </svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
