@@ -69,13 +69,13 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--cream);
-  border-bottom: 1px solid rgba(44, 24, 16, 0.08);
+  background: var(--dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   transition: box-shadow 0.3s ease;
 }
 
 nav.scrolled {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
 }
 
 .nav-inner {
@@ -116,7 +116,7 @@ nav.scrolled {
   font-family: 'Outfit', sans-serif;
   font-weight: 500;
   font-size: 15px;
-  color: var(--dark);
+  color: rgba(250, 246, 238, 0.75);
   transition: color 0.2s ease;
 }
 
@@ -151,7 +151,7 @@ nav.scrolled {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--dark);
+  background: var(--cream);
   transition: all 0.3s ease;
   transform-origin: center;
 }
@@ -1146,7 +1146,7 @@ footer {
     top: 68px;
     left: 0;
     right: 0;
-    background: var(--cream);
+    background: var(--dark);
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
