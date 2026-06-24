@@ -170,29 +170,60 @@ nav.scrolled {
 }
 
 /* ===========================
-   HERO
+   HERO — full-bleed
    =========================== */
 .hero {
-  display: grid;
-  grid-template-columns: 43fr 57fr;
+  position: relative;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 
-.hero-left {
-  background: var(--cream);
-  padding: 0 64px;
+.hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-bg .img-placeholder {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(44, 24, 16, 0.92) 0%,
+    rgba(44, 24, 16, 0.48) 46%,
+    rgba(44, 24, 16, 0.04) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 72px 72px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 24px;
+  gap: 20px;
 }
 
-.hero-deco-line {
-  width: 48px;
-  height: 2px;
+.hero-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-kicker-dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
   background: var(--gold);
-  margin-bottom: 8px;
+  flex-shrink: 0;
 }
 
 .hero-tag {
@@ -200,30 +231,35 @@ nav.scrolled {
   font-size: 12px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(44, 24, 16, 0.6);
+  color: rgba(250, 246, 238, 0.70);
 }
 
 .hero-title {
   font-family: 'Fraunces', serif;
   font-style: italic;
   font-weight: 900;
-  font-size: 96px;
-  line-height: 1.05;
-  color: var(--dark);
+  font-size: 104px;
+  line-height: 0.97;
+  color: var(--cream);
   letter-spacing: -0.02em;
+}
+
+.hero-title em {
+  color: var(--gold);
+  font-style: normal;
 }
 
 .hero-subtitle {
   font-family: 'Outfit', sans-serif;
-  font-size: 18px;
-  color: rgba(44, 24, 16, 0.65);
+  font-size: 17px;
+  color: rgba(250, 246, 238, 0.65);
   line-height: 1.6;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 16px;
-  margin-top: 8px;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
 .btn-filled {
@@ -264,13 +300,23 @@ nav.scrolled {
   transform: translateY(-2px);
 }
 
-.hero-right {
-  overflow: hidden;
-  height: 100vh;
+.btn-outline-light {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  background: transparent;
+  color: var(--cream);
+  padding: 14px 28px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(250, 246, 238, 0.55);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  display: inline-block;
 }
 
-.hero-right .img-placeholder {
-  min-height: 100vh;
+.btn-outline-light:hover {
+  background: rgba(250, 246, 238, 0.12);
+  transform: translateY(-2px);
 }
 
 /* ===========================
@@ -1120,6 +1166,18 @@ footer {
   width: 100%;
 }
 
+.menu-extras-label {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--dark);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+}
+
 .menu-extras-text {
   font-family: 'Outfit', sans-serif;
   font-size: 14px;
@@ -1150,18 +1208,21 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 16px 0 24px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     list-style: none;
     z-index: 99;
   }
 
   .nav-menu.open {
-    max-height: 400px;
-    padding: 16px 0 24px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0s;
   }
 
   .nav-menu li {
@@ -1186,29 +1247,14 @@ footer {
   }
 
   /* Hero */
-  .hero {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50vh auto;
-    height: auto;
-  }
-
-  .hero-right {
-    order: -1;
-    height: 50vh;
-  }
-
-  .hero-right .img-placeholder {
-    min-height: 50vh;
-    height: 50vh;
-  }
-
-  .hero-left {
-    padding: 40px 24px 48px;
-    gap: 18px;
+  .hero-content {
+    padding: 0 24px 52px;
+    gap: 16px;
   }
 
   .hero-title {
     font-size: 52px;
+    line-height: 1.0;
   }
 
   .hero-subtitle {
